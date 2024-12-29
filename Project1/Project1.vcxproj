@@ -127,11 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="D:\Users\17237\Desktop\新建文件夹 (2)\test1.cpp" />
-    <ClCompile Include="D:\Users\17237\Desktop\新建文件夹 (2)\test2.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="D:\Users\17237\Desktop\新建文件夹 (2)\test.h" />
+    <ClCompile Include="源.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
