@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="test1.cpp" />
     <ClCompile Include="test2.cpp" />
+    <ClCompile Include="test4.cpp" />
     <ClCompile Include="源.cpp" />
   </ItemGroup>
   <ItemGroup>
