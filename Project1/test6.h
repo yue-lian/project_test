@@ -131,7 +131,7 @@ class Father5
 {
 public:
 	Father5();
-	void func051();
+	//void func051();
 	void func052(int a);
 
 public:
@@ -225,23 +225,91 @@ void test06();
 
 
 //多态实现
-class CalculatorUp
+class AbstractCalculator
 {
 public:
-	CalculatorUp();
-	~CalculatorUp();
+	virtual int getResult();
+public:
+	int inputNum1;
+	int inputNum2;
+};
 
-private:
+//加法计算
+class AddCalculator:public AbstractCalculator
+{
+public:
+	
+	int getResult();
+
+};
+//减法计算
+class SubCalculator:public AbstractCalculator
+{
+public:
+	
+	int getResult();
 
 };
 
+//乘法计算
+class MulCalculator:public AbstractCalculator
+{
+public:
+	
+	int getResult();
+
+};
+
+//除法计算
+class DivCalculator:public AbstractCalculator
+{
+public:
+	int getResult();
+};
+//测试计算器的正常功能
+void test07();
+
+//21.3 纯虚函数和抽象类
+
+class Base
+{
+public:
+	virtual void func() = 0;
+
+};
+
+class Son6 :public Base
+{
+public:
+	virtual void func();
+};
+
+void test08();
 
 
+//21.4虚析构和纯虚析构
+class Base9
+{
+public:
+	Base9();
+	virtual ~Base9() = 0;
+	virtual void Speak() = 0;
+public:
 
+};
 
+class Test9 :public Base9
+{
+public:
+	Test9(string name);
+	Test9();
+	~Test9();
+	virtual void Speak();
+public:
+	string *m_name;
+};
 
-
-
+void test09();
 
 #endif // !_OI_PROJECT1_TEST6_H
 
